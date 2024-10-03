@@ -12,7 +12,7 @@ function Contact() {
             <h1 onClick={()=>navigateTo.push('/')} className='text-3xl font-semibold  bg-gray-500 cursor-pointer px-2 text-white '>Home </h1>
             <h1 onClick={()=>navigateTo.push('/about')} className='text-3xl font-semibold  bg-gray-500 cursor-pointer px-2 text-white '>About </h1>
             </div>
-            <br /><br /><br />
+            <br /><br /><br /><br />
             <Footer />
         </div>
     )
