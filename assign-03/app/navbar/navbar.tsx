@@ -8,9 +8,9 @@ function Navbar() {
     return (
         <div>
             <nav>
-                <ul className='flex justify-evenly items-center gap-5'>
-                    <button className='text-3xl font-semibold  bg-red-500 px-2 text-white ' onClick={() => goto.push('/about')}>ABOUT</button>
-                    <button className='text-3xl font-semibold  bg-red-500 px-2 text-white ' onClick={() => goto.push('/contact')}>CONTACT</button>
+                <ul >
+                    <button  onClick={() => goto.push('/about')}>ABOUT</button>
+                    <button  onClick={() => goto.push('/contact')}>CONTACT</button>
                 </ul>
             </nav>
         </div>

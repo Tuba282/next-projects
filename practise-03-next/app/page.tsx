@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState ,useEffect } from 'react';
+import ArrayObject from './ArrayObject/page';
 export default function Home() {
   const [add, setAdd] = useState(0)
   const route = useRouter();//ek tareeqa ye hai navigation karny ka
@@ -22,7 +23,7 @@ export default function Home() {
       <Link href='/navbar'>{/*ye file base routing */}
         <h1 className="bg-yellow-950 text-white text-4xl">Want to go on Navbar</h1>
       </Link>
-      
+        <ArrayObject />
       
       <br /><br /><br /><br /><br /><br />
       <button
