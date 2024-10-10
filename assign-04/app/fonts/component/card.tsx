@@ -6,7 +6,7 @@ import React from 'react'
 
 function Card(students: { id: number, name: string, timming: string, day: string }) {
   return (
-    <div className='min-h-screen w-full grid justify-center items-center'>
+    <div className='min-h-screen my-6 w-full grid justify-center items-center'>
       <div className=" flex flex-wrap justify-center items-center gap-10">
         <div className="front rounded-md  bg-slate-200">
           <div className="front-img">

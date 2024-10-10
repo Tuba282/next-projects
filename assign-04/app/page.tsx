@@ -24,11 +24,11 @@ export default function Home() {
       {students.map((student, ind) => (
         // <Card key={student.id} id={student.id} day={students.} />
         <Card
-          key={student.id}
-          id={students[ind].id}
-          name={students[ind].name}
-          day={students[ind].day}
-          timming={students[ind].timming}
+          key = {student.id}
+          id = {students[ind].id}
+          name = {students[ind].name}
+          day = {students[ind].day}
+          timming = {students[ind].timming}
         />
 
       ))}
