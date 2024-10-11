@@ -10,7 +10,7 @@ import GIAIC from "@/app/assets/giaic.png"
 import { Button } from "@/components/ui/button"
 function About() {
   return (
-    <div className='About-sec w-full '>
+    <div id='about' className='About-sec w-full '>
         <div className="flex my-5 justify-center items-center">
                 <Button
                 variant="outline"

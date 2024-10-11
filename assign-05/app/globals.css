@@ -5,8 +5,8 @@
 :root {
   --text: #c5c7c4;
   --background: #081901;
-  --transparent: rgba(128, 128, 128, 0.049);
-  --border: 1px solid rgba(128, 128, 128, 0.171);
+  --transparent: rgba(128, 128, 128, 0.122);
+  --border: 1px solid rgba(128, 128, 128, 0.328);
   --rounded: 50px;
 }
 @font-face {
@@ -18,6 +18,7 @@ body {
   font-family: Arima !important;
   background-color: var(--background) !important;
   color: var(--text);
+  scroll-behavior: smooth;
 }
 .main-container {
   max-width: 1920px !important;
@@ -160,7 +161,7 @@ body {
   background-position: left bottom, left bottom, right top, right top, 2px 2px;
 }
 .about-btn:hover {
-  background-color:white !important;
+  background-color: white !important;
   color: var(--background) !important;
   border-radius: 8px;
 }
@@ -226,7 +227,7 @@ body {
   color: white;
   font-weight: 900;
 }
-.client-card{
+.client-card {
   width: 50%;
   min-height: 400px;
   padding: 1em;
@@ -237,18 +238,27 @@ body {
 }
 /* footer sec css */
 
-
-.pro-card{
+.pro-card {
   width: 250px;
   min-height: 300px;
   padding: 1em;
   margin: 0 auto;
+  text-align: center !important;
   background: var(--transparent);
   border-radius: var(--rounded);
   border: var(--border);
   display: grid;
   justify-content: center;
   align-items: center;
+}
+.pro_icon {
+  width: 50px;
+  height: 50px;
+  /* margin: 0 auto; */
+}
+.cer_icon {
+  width: 30px;
+  height: 30px;
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -272,13 +282,13 @@ body {
   .edu .div {
     width: 100%;
   }
-  .client-card .card-flex{
+  .client-card .card-flex {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center;
     gap: 20px 0px;
   }
-  .client-card .star-div{
+  .client-card .star-div {
     margin: 0 auto;
   }
 }
@@ -346,11 +356,12 @@ body {
   }
 }
 @media (max-width: 580px) {
-.client-card{
-  width: 90% !important;
-}.pro-card{
-  width: 90%;
-}
+  .client-card {
+    width: 90% !important;
+  }
+  .pro-card {
+    width: 90%;
+  }
 }
 @media (max-width: 425px) {
   .typed-span {
@@ -372,7 +383,8 @@ body {
   .right-side {
     width: 280px !important;
     padding: 1em;
-  }.about-btn {
+  }
+  .about-btn {
     width: 300px !important;
-}
+  }
 }

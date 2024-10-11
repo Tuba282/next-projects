@@ -55,7 +55,7 @@ function Review() {
               <Image src={Maam} className='  p-1' alt=""></Image>
               <div className="grid justify-center items-center">
                 <br /><br />
-               <p className='text-2xl font-semibold'>Maan Rukhsana Panhwer</p>
+               <p className='text-2xl font-semibold'>Maam Rukhsana Panhwer</p>
                 <span className='flex gap-2 star-div'>
                   <Icon icon="noto:star" width={20} height={20} />
                   <Icon icon="noto:star" width={20} height={20} />

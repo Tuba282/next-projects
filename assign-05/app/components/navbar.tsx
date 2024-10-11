@@ -13,16 +13,19 @@ function Navbar() {
             </div>
             <nav className="nav ">
                 <ul className="nav-ul flex justify-between items-center gap-5">
-                    <li className="nav-li">Home</li>
-                    <li className="nav-li">Education</li>
+                    <Link href='/'><li className="nav-li">Home</li></Link>
+                    <Link href='/#about'><li className="nav-li">About</li></Link>
+                    <Link href='/#projects'>
                     <li className="nav-li dropdown">Projects
 
                         <div className="project-links">
 
                         </div>
                     </li>
+                    </Link>
 
-                    <li className="nav-li">Certificates</li>
+                    <Link href='/#certificates'><li className="nav-li">Certificates</li></Link>
+                    
                 </ul>
             </nav>
             <div className="nav-icons flex justify-between items-center gap-2">
