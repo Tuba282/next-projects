@@ -149,7 +149,7 @@ body {
 
 /* about css */
 .about-btn {
-  width: 300px !important;
+  width: 350px !important;
   height: 80px !important;
   border-radius: 8px;
   border: none;
@@ -160,8 +160,8 @@ body {
   background-position: left bottom, left bottom, right top, right top, 2px 2px;
 }
 .about-btn:hover {
-  background-color: var(--background) !important;
-  color: var(--text) !important;
+  background-color:white !important;
+  color: var(--background) !important;
   border-radius: 8px;
 }
 
@@ -218,6 +218,38 @@ body {
     transform: translateY(0px);
   }
 }
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+  padding: 10px;
+  /* background-color: #ffc107; */
+  color: white;
+  font-weight: 900;
+}
+.client-card{
+  width: 50%;
+  min-height: 400px;
+  padding: 1em;
+  margin: 0 auto;
+  background: var(--transparent);
+  border-radius: var(--rounded);
+  border: var(--border);
+}
+/* footer sec css */
+
+
+.pro-card{
+  width: 250px;
+  min-height: 300px;
+  padding: 1em;
+  margin: 0 auto;
+  background: var(--transparent);
+  border-radius: var(--rounded);
+  border: var(--border);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -239,6 +271,15 @@ body {
 @media (max-width: 1024px) {
   .edu .div {
     width: 100%;
+  }
+  .client-card .card-flex{
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 20px 0px;
+  }
+  .client-card .star-div{
+    margin: 0 auto;
   }
 }
 @media (max-width: 920px) {
@@ -304,6 +345,13 @@ body {
     width: 300px;
   }
 }
+@media (max-width: 580px) {
+.client-card{
+  width: 90% !important;
+}.pro-card{
+  width: 90%;
+}
+}
 @media (max-width: 425px) {
   .typed-span {
     font-size: 30px;
@@ -315,7 +363,7 @@ body {
     width: 220px !important;
     margin-top: 2em !important;
   }
-  .sir-img{
+  .sir-img {
     margin: 0 auto !important ;
   }
   .sir-flex {
@@ -324,5 +372,7 @@ body {
   .right-side {
     width: 280px !important;
     padding: 1em;
-  }
+  }.about-btn {
+    width: 300px !important;
+}
 }
