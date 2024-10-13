@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Icon } from '@iconify/react';
 import Sir1 from "@/app/assets/client-img.png"
 import Maam from "@/app/assets/cleint-img.png"
-import { Autoplay, Navigation} from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"
 import "swiper/css/effect-coverflow"
@@ -27,14 +27,14 @@ function Review() {
         autoplay={true}
         loop={true}
         modules={[Autoplay, Navigation]}>
-          {/* Slider -1 */}
+        {/* Slider -1 */}
         <SwiperSlide className='my-6'>
           <div className="client-card grid my-9 gap-3">
             <div className="flex card-flex gap-4 sir-flex">
               <Image src={Sir1} className='  p-1' alt=""></Image>
               <div className="grid justify-center items-center">
                 <br /><br />
-               <p className='text-2xl font-semibold'>Sir Abdul Jabbar </p>
+                <p className='text-2xl font-semibold'>Sir Abdul Jabbar </p>
                 <span className='flex gap-2 star-div'>
                   <Icon icon="noto:star" width={20} height={20} />
                   <Icon icon="noto:star" width={20} height={20} />
@@ -48,14 +48,14 @@ function Review() {
             </div>
           </div>
         </SwiperSlide>
-          {/* Slider -2 */}
+        {/* Slider -2 */}
         <SwiperSlide className='my-6'>
           <div className="client-card grid my-9 gap-3">
             <div className="flex card-flex gap-4 sir-flex">
               <Image src={Maam} className='  p-1' alt=""></Image>
               <div className="grid justify-center items-center">
                 <br /><br />
-               <p className='text-2xl font-semibold'>Maam Rukhsana Panhwer</p>
+                <p className='text-2xl font-semibold'>Maam Rukhsana Panhwer</p>
                 <span className='flex gap-2 star-div'>
                   <Icon icon="noto:star" width={20} height={20} />
                   <Icon icon="noto:star" width={20} height={20} />
