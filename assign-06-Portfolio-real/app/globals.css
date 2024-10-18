@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +27,7 @@
 }
 @font-face {
   font-family: time-font;
-  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/DeliusUnicase-Regular.ttf);
 }
 html,
 body {
@@ -35,9 +36,6 @@ body {
 .main-container {
   max-width: 1800px !important;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background: var(--light);
 }
 .sub-container {
@@ -48,14 +46,11 @@ body {
   justify-content: space-between !important;
   align-items: center !important;
   gap: 2em;
-  background: yellowgreen;
 }
 .sidebar {
   width: var(--sidebar-width);
   height: var(--height);
   background: var(--dark);
-  /* left: 2.5em;
-  position: absolute; */
   transform: width all ease 0.5s;
 }
 .logo-text,
@@ -89,7 +84,16 @@ body {
   padding: 5px 10px;
   border-radius: 0px 6px 6px 0px;
 }
-
+.frontSide{
+  width: var(--restContent-width) !important;
+  height: var(--height) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+  padding: 2em;
+}
 .restContent {
   width: var(--restContent-width) !important;
   height: var(--height) !important;
@@ -98,10 +102,6 @@ body {
   justify-content: center;
   gap: 2em;
   align-items: center;
-  /* position: absolute;
-  left: var(--sidebar-width) !important; */
-  background: khaki;
-  padding: 2em;
 }
 .restContent .top,
 .restContent .middle,
@@ -112,28 +112,27 @@ body {
 .restContent .top {
   width: 100% !important;
   min-height: 20% !important;
-  margin-top: -2em;
+  margin-top: -3em !important;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   flex-direction: row !important;
   gap: 10px;
-  margin-top: -7em;
-  background: plum;
 }
 .top .div1 {
   width: 50% !important;
-  /* min-height: 100px; */
 }
 .top .div1 #time {
+  font-family: time-font !important;
   font-size: 50px !important;
   cursor: pointer;
-  /* font-family: time-font !important; */
-  font-weight: 300 !important;
+  color: var(--dark) !important;  
+  font-weight: 600 !important;
 }
 .top .div1 #month,
 .top .div1 #timing {
   font-weight: lighter !important;
+  color: var(--dark) !important;  
 }
 .top .div1 #date,
 .top .div1 #sec {
@@ -158,6 +157,41 @@ body {
   transform: scale(1.2);
   padding: 0px 1em !important;
 }
+.restContent .middle {
+  width: 100% !important;
+  height: 40% !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.loop {
+  /* display: inline-block; */
+  white-space: nowrap;
+  text-align: center;
+  font-size: 100px;
+  position: absolute;
+  color: #003092;
+  top: 10%;
+  animation: text-flow 90s linear infinite;
+  animation-delay: 0s;
+}
+.loop .span {
+  -webkit-text-stroke: 1.2px var(--light) !important;
+}
+@keyframes text-flow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.bottom-img {
+  width: 650px;
+  height: 600px;
+  top: -23em !important;
+  left: 2em !important;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -169,6 +203,12 @@ body {
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 1280px) and (min-width: 1020px) {
+  .bottom-img {
+    top: -23em !important;
+    left: -2em !important;
+  }
+}
 
 @media (max-width: 1020px) and (min-width: 300px) {
   .sub-container {
@@ -213,6 +253,12 @@ body {
   .pages .page-li {
     display: none !important;
   }
+  .bottom-img {
+    width: 548px;
+    height: 500px;
+    top: -19em !important;
+    left: 1em !important;
+  }
 }
 @media (max-width: 767px) {
   .restContent {
@@ -230,6 +276,10 @@ body {
   }
   .top .div2 {
     justify-content: center !important;
+  }
+  .bottom-img {
+    top: -17em !important;
+    left: 0em !important;
   }
 }
 
@@ -258,5 +308,8 @@ body {
   .top-icons .img {
     width: 30px !important;
     height: 30px !important;
+  }
+  .bottom-img {
+    height: 400px;
   }
 }
