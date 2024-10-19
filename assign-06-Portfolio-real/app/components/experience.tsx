@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
-import Exp_img1 from "@/app/assets/BFFP.jpg"
+import Exp_img1 from "@/app/assets/bffp.jpg"
 import Exp_img2 from "@/app/assets/acshr.jpg"
 import React from 'react'
 
