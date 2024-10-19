@@ -1,7 +1,6 @@
 'use client';
 // import gsap from 'gsap';
 import Link from 'next/link';
-// import { Icon } from '@iconify/react';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Front_Img from "@/app/assets/bg-1.png";

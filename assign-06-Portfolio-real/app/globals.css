@@ -84,15 +84,16 @@ body {
   padding: 5px 10px;
   border-radius: 0px 6px 6px 0px;
 }
-.frontSide{
+.frontSide {
   width: var(--restContent-width) !important;
-  height: var(--height) !important;
+  min-height: var(--height) !important;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  /* gap: 2em; */
   align-items: center;
-  padding: 2em;
+  /* padding: 2em; */
 }
 .restContent {
   width: var(--restContent-width) !important;
@@ -100,7 +101,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  /* gap: 2em; */
   align-items: center;
 }
 .restContent .top,
@@ -124,15 +125,15 @@ body {
 }
 .top .div1 #time {
   font-family: time-font !important;
-  font-size: 50px !important;
+  font-size: 46px !important;
   cursor: pointer;
-  color: var(--dark) !important;  
+  color: var(--dark) !important;
   font-weight: 600 !important;
 }
 .top .div1 #month,
 .top .div1 #timing {
   font-weight: lighter !important;
-  color: var(--dark) !important;  
+  color: var(--dark) !important;
 }
 .top .div1 #date,
 .top .div1 #sec {
@@ -192,6 +193,234 @@ body {
   top: -23em !important;
   left: 2em !important;
 }
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/*--------------------- Project CSS------------------------------------ */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.project {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  /* overflow-y: scroll; */
+  gap: 2em;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+.pro_card {
+  position: relative;
+  width: 180px;
+  height: 150px;
+  background-color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center !important ;
+  align-items: center !important;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  color: var(--dark);
+}
+.pro_card:hover {
+  transform: scale(1.1);
+  height: 190px;
+}
+.pro_card .img {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center !important ;
+  align-items: center !important;
+  text-align: center;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.pro_img {
+  filter: drop-shadow(2px 2px 15px #00000076);
+}
+.pro_icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3 ease;
+}
+.pro_icon:hover {
+  transform: scale(1.2);
+}
+.text .demo {
+  display: none;
+  transition: all 0.3s ease;
+}
+.pro_card:hover .text .demo {
+  display: block;
+  transform: scale(1);
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* ---------------------Experince ------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+.experience {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  gap: 2em;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+.exp_card {
+  position: relative;
+  width: 500px;
+  min-height: 300px;
+  background-color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center !important ;
+  align-items: center !important;
+  line-height: 1.5em;
+  gap: 0em 3em;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  color: var(--dark);
+}
+.exp_card:hover {
+  transform: scale(1.1);
+}
+.exp_card .div1,
+.exp_card .div2 {
+  width: 50%;
+  height: 100%;
+}
+.exp-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.exp-1 {
+  position: absolute;
+  top: 7em;
+  left: 30em;
+  transform: rotate(-16deg);
+}
+.exp-2 {
+  position: absolute;
+  top: 15em;
+  left: 55em;
+  transform: rotate(9deg);
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* ---------------------Certificate ------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+.certify {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  padding-left: 3em;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+.cer-card {
+  position: relative;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 280px;
+  min-height: 200px;
+  gap: 3em;
+  border-radius: 5px;
+  background: #fff;
+  margin: 20px;
+  padding: 1em;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all ease 0.5s;
+}
+.cer-hide {
+  display: none;
+}
+.cer-card:hover {
+  width: 400px;
+}
+.cer-card:hover .cer-hide {
+  display: block;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* --------------------------About------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.line .img {
+  width: 40px;
+  height: 600px;
+}
+.text {
+  line-height: 1.5em;
+  min-height: 100px;
+}
+.box {
+  max-width: 550px;
+  min-height: 100px;
+  background: #fff;
+  margin: 10px 0px;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  border-radius: 16px 0px 16px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -203,9 +432,22 @@ body {
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 1440px) and (min-width: 300px) {
+  .exp-2,
+  .exp-1 {
+    position: static;
+    transform: rotate(0);
+  }
+  .exp_card {
+    position: static;
+  }
+  .experience {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 1280px) and (min-width: 1020px) {
   .bottom-img {
-    top: -23em !important;
+    top: -22em !important;
     left: -2em !important;
   }
 }
@@ -241,6 +483,12 @@ body {
   .pages .li .link {
     gap: 0.5em;
   }
+  .bottom-img {
+    width: 650px;
+    height: 600px;
+    top: -22em !important;
+    left: -1em !important;
+  }
 }
 
 @media (max-width: 890px) {
@@ -253,11 +501,15 @@ body {
   .pages .page-li {
     display: none !important;
   }
-  .bottom-img {
-    width: 548px;
-    height: 500px;
-    top: -19em !important;
-    left: 1em !important;
+  .round {
+    display: none !important;
+  }
+  .box {
+    width: 100%;
+    padding: 20px;
+  }
+  .about-card {
+    margin-left: 0 !important;
   }
 }
 @media (max-width: 767px) {
@@ -278,8 +530,21 @@ body {
     justify-content: center !important;
   }
   .bottom-img {
-    top: -17em !important;
+    width: 550px;
+    height: 499px;
+    top: -15em !important;
     left: 0em !important;
+  }
+  .exp_card {
+    flex-direction: column;
+  }
+  .exp_card .div1,
+  .exp_card .div2 {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .exp_card:hover {
+    transform: none;
   }
 }
 
@@ -311,5 +576,11 @@ body {
   }
   .bottom-img {
     height: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .box {
+    flex-direction: column;
+    text-align: center;
   }
 }

@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <hr className='my-4 opacity-25' />
           <ul className={`pages grid items-center gap-10 py-10 cursor-pointer`}>
-            {pages.map((page) => (  
+            {pages.map((page) => (
               <li key={page.name} className='li'>
                 <a onClick={() => setActiveComponent(page.name)} className='link'>
                   <Icon className='inline text-xl icon' icon={page.icon} />
