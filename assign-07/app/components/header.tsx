@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Icon } from '@iconify/react';
 import Image from 'next/image'
@@ -12,15 +13,15 @@ function Header() {
             </div>
             <div id="nav-links">
                 <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Home</a></li>
+                    <li><Link href='/'>Home</Link></li>
+                    <li><a href='#'>Gallery</a></li>
+                    <li><a href='#'>Tour Guide</a></li>
                 </ul>
             </div>
 
             <div id="side-links">
                 <div id="search-bar" className='relative'>
-                    <input className="button-31 mx-2" contentEditable placeholder='Search' type="search" />
+                    <input className="button-31 mx-2 " contentEditable placeholder='Search' type="search" />
                     <Icon icon="iconamoon:search-bold" width="30" height="30" className='seach-btn' style={{ color: '#ffce1a' }} />
                 </div>
                 <Link target='_blank' href={'https://www.instagram.com/tubajan282/'}>

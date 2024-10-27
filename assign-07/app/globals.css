@@ -5,12 +5,16 @@
 :root {
   --background: #fdcb6e;
   --yellow: #ffce1a;
+  --red: #8c0010;
+  --black: #272727;
 }
-
+body {
+  /* color: #fcfcfd !important; */
+}
 .mainContainer {
   max-width: 1920px;
   margin: 0 auto;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
 }
 .subContainer {
   max-width: 1400px;
@@ -29,20 +33,18 @@
   border-radius: 100px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  background-color: var(--yellow);
+  background-color: var(--red);
 }
 
 /* CSS */
 .button-30 {
   align-items: center;
   appearance: none;
-  background-color: #fcfcfd;
+  background-color: var(--black);
   border-radius: 50px;
   border-width: 0px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395a;
+  color: var(--yellow);
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono", monospace;
@@ -63,21 +65,22 @@
   white-space: nowrap;
   will-change: box-shadow, transform;
   font-size: 18px;
+  border: 1px solid var(--yellow);
 }
 
-.button-30:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-}
+/* .button-30:focus {
+  box-shadow: var(--yellow) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--yellow) 0 -3px 0 inset;
+} */
 
 .button-30:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--yellow) 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 .button-30:active {
-  box-shadow: #d6d6e7 0 3px 7px inset;
+  box-shadow: var(--yellow) 0 3px 7px inset;
   transform: translateY(2px);
 }
 
@@ -85,7 +88,7 @@
   width: 200px;
   align-items: center;
   appearance: none;
-  background-color: #ffffffa5;
+  background-color: #ffffff37;
   border-radius: 50px;
   border-width: 0px;
   outline: none;
@@ -93,7 +96,7 @@
   /* box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box; */
-  color: #36395a;
+  color: var(--background) !important;
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono", monospace;
@@ -115,7 +118,9 @@
   will-change: box-shadow, transform;
   font-size: 18px;
 }
-
+input::placeholder {
+  color: var(--background);
+}
 #nav-links ul {
   display: flex;
   justify-content: space-between;
@@ -124,7 +129,7 @@
 }
 
 #nav-links ul li {
-  color: #ffff;
+  color: var(--yellow);
   font-size: 20px;
   font-weight: 600;
   text-shadow: 2px 2px 2px #a1710e;
@@ -146,8 +151,11 @@
   min-height: 450px;
   margin: 3em 0px;
   display: flex;
+  background: url(./assets/wave-haikei.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
   justify-content: center;
-  justify-content: center;
+  border-radius: 4px;
 }
 .hero-sec .left,
 .hero-sec .right {
@@ -172,7 +180,7 @@
   gap: 5px;
   justify-content: center;
   font-family: "JetBrains Mono", monospace;
-  background: var(--yellow);
+  /* background: var(--yellow); */
 }
 
 .swiper {
@@ -268,6 +276,62 @@
   border-radius: 50%;
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxx Animated-sec CSS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.anim-hr {
+  transition: all ease 0.3s;
+}
+.anim-sell:hover + .anim-hr {
+  width: 250px !important;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxx Discount-sec CSS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.discount-sec {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px / 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/dis-img-4.png) no-repeat center;
+  background-position: center;
+  background-size: cover;
+}
+.corn {
+  animation: up-down 3s infinite !important;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.space {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/footer-img.png) no-repeat center;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxx Gallery-sec CSS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.gal-swiper {
+  width: 100% !important;
+  height: 550px !important;
+  border-radius: 2px;
+}
+.gal-img {
+  width: 100% !important;
+  height: 100% !important;
+}
 /* --------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
@@ -346,7 +410,7 @@
 @media (max-width: 500px) {
   .sell {
     min-height: 400px;
-    padding:1em 0;
+    padding: 1em 0;
   }
   .swiper {
     width: 170px;
@@ -363,11 +427,21 @@
     width: 300px !important;
     height: 400px !important;
   }
+  .gal-swiper {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 2px;
+  }
 }
 @media (max-width: 445px) {
   .adv-swiper {
     width: 250px !important;
     height: 300px !important;
+  }
+  .flex-img .img {
+    width: 82%;
+    height: 100%;
+    border-radius: 5px;
   }
   .button-31 {
     width: 30px;

@@ -19,7 +19,7 @@ import IMG_9 from "@/app/assets/adv-img-9.png";
 import IMG_10 from "@/app/assets/adv-img-10.png";
 import IMG_11 from "@/app/assets/adv-img-11.png";
 
-function Adventure() {
+function Animated() {
     type Tadv = {
         title: string;
         author: string;
@@ -44,7 +44,7 @@ function Adventure() {
     return (
         <div className='adv-sec'>
             <h1 className="top-sell text-3xl font-bold text-[var(--yellow)] cursor-pointer">Top Sellers</h1>
-            <hr className='w-[80px] bg-[#9CA3AF] h-2 rounded-md mt-2 top-hr' />
+            <hr className='w-[80px] bg-[var(--red)] h-2 rounded-md mt-2 top-hr' />
             <div className="sell">
                 <Swiper
                     spaceBetween={10}
@@ -92,4 +92,4 @@ function Adventure() {
     );
 }
 
-export default Adventure;
+export default Animated;

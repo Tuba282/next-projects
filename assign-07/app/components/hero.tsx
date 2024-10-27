@@ -22,24 +22,13 @@ import IMG_12 from "@/app/assets/hero-img-12.png"
 import IMG_13 from "@/app/assets/hero-img-13.png"
 import IMG_14 from "@/app/assets/hero-img-14.png"
 import IMG_15 from "@/app/assets/hero-img-15.png"
+
+import AOS from '@/aos/dist/aos';
+import { useEffect } from 'react';
 const Hero = () => {
-    // type Timg = {
-    //     img1: StaticImageData
-    //     img2: StaticImageData
-    //     img3: StaticImageData
-    //     img4: StaticImageData
-    //     img5: StaticImageData
-    //     img6: StaticImageData
-    //     img7: StaticImageData
-    //     img8: StaticImageData
-    //     img9: StaticImageData
-    //     img10: StaticImageData
-    //     img11: StaticImageData
-    //     img12: StaticImageData
-    //     img13: StaticImageData
-    //     img14: StaticImageData
-    //     img15: StaticImageData
-    // }
+    useEffect(() => {
+        AOS.init();
+    }, []);
     const img_data: StaticImageData[] = [
         IMG_1, IMG_2, IMG_3, IMG_4, IMG_5, IMG_6, IMG_7, IMG_8, IMG_9,
         IMG_10, IMG_11, IMG_12, IMG_13, IMG_14, IMG_15
@@ -47,18 +36,18 @@ const Hero = () => {
 
     return (
         <div className='hero-sec'>
-            <div className="left">
-                <h1 className='hero-heading font-bold text-[#FFCE1A] uppercase'>This Week Hottest Releases <span className='text-black'>Grab</span> your favourite</h1>
+            <div className="left ">
+                <h1 className='hero-heading font-bold text-[#FFCE1A] uppercase '>This Week Hottest Releases <span className='text-black'>Grab</span> your favourite</h1>
                 <p className='hero-para my-6 font-'>Its time to update your reading list with some of the latest and greatest releases in the literary world. From heart-pumping thrillers to captivating memoirs, this week new releases offer something for everyone</p>
                 <Link target="_blank" href={'https://www.linkedin.com/in/tuba-jan-10b0a12b5/'}>
                     <p className='hero-btn button-30 '>
                         <b>Visit</b>
                         <Icon icon="uil:arrow-right" width="20" height="20" style={{ color: '#fff' }} />
-                        <Icon icon="eva:linkedin-fill" width="20" height="20" style={{ color: '#fff' }} />
+                        <Icon icon="eva:linkedin-fill" width="20" height="20" style={{ color: 'var(--yellow)' }} />
                     </p>
                 </Link>
             </div>
-            <div className="right">
+            <div className="right ">
                 <Swiper
                     effect={'cards'}
                     grabCursor={true}
