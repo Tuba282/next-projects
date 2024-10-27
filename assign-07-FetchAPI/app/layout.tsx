@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "OwnSelf",
+  title: "OwnShelf",
   description: "Crafted by Tuba Jan",
 };
 
