@@ -24,8 +24,8 @@ function Feature() {
             <div className="cards my-10 flex flex-wrap gap-12 justify-center items-center">
                 {
                     fed_card.map((card) => (
-                        <div key={card.icon} className="card grid p-3  rounded-md bg-[var(--red)] text-white font-light" style={{ width: '300px', height: '250px', boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px", }}>
-                            <Icon icon={card.icon} className=' bg-[var(--yellow)] p-2 rounded-md' width="50" height="50" style={{ color: '#8c0010', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px' }} />
+                        <div key={card.icon} className="card grid p-3  bg-[var(--red)] text-white font-light" style={{ width: '300px',borderRadius:'5px', height: '250px', boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px", }}>
+                            <Icon icon={card.icon} className=' bg-[var(--yellow)] p-2' width="50" height="50" style={{ color: '#8c0010',borderRadius:'5px', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px' }} />
                             <h4 className='font-bold text-2xl'>{card.h4}</h4>
                             <p className=''>{card.text}</p>
                         </div>

@@ -35,7 +35,7 @@ function Animated() {
         { title: "detective chintang", author: "Octavia Spencer", like: "comedy crime", img: IMG_5 },
         { title: "detective china town 2", author: "Octavia Spencer", like: "comedy adventure", img: IMG_6 },
         { title: "detective china town 3", author: "Octavia Spencer", like: "comedy crime", img: IMG_7 },
-        { title: "midnight runners", author: "Dean Koontz", like: "action comedy crime", img: IMG_8 },
+        { title: "midnight summer", author: "Dean Koontz", like: "action comedy crime", img: IMG_8 },
         { title: "Johnny English", author: "Neal Purvis", like: "comedy crime", img: IMG_9 },
         { title: "Johnny English 2", author: "Robert Wade", like: "drama comedy", img: IMG_10 },
         { title: "Johnny English 3", author: "William Davies", like: "action comedy", img: IMG_11 },

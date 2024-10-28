@@ -8,9 +8,7 @@
   --red: #8c0010;
   --black: #272727;
 }
-body {
-  /* color: #fcfcfd !important; */
-}
+
 .mainContainer {
   max-width: 1920px;
   margin: 0 auto;
